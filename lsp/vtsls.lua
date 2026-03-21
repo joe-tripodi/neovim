@@ -67,7 +67,6 @@
 ---
 --- This includes the same Deno-excluding logic from `ts_ls`. It is not recommended to enable both `vtsls` and `ts_ls` at the same time!
 
----@type vim.lsp.Config
 return {
   cmd = { 'vtsls', '--stdio' },
   init_options = {
