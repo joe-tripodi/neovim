@@ -46,7 +46,7 @@
       "src": "https://github.com/nvim-neotest/nvim-nio"
     },
     "nvim-treesitter": {
-      "rev": "877f724846f2202a16e311bd19efb954bd1c430e",
+      "rev": "e5f65e31a5ec0e8526b2311ff8c7aaea4a581c82",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter",
       "version": "'main'"
     },
@@ -64,7 +64,7 @@
       "src": "https://github.com/olimorris/onedarkpro.nvim"
     },
     "snacks.nvim": {
-      "rev": "e6fd58c82f2f3fcddd3fe81703d47d6d48fc7b9f",
+      "rev": "ad9ede6a9cddf16cedbd31b8932d6dcdee9b716e",
       "src": "https://github.com/folke/snacks.nvim"
     },
     "which-key.nvim": {
