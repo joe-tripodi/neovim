@@ -5,10 +5,10 @@ end
 
 local default_keymaps = {
   { keys = "<leader>ca", func = vim.lsp.buf.code_action, desc = "Code Actions" },
-  { keys = "<leader>cr", func = vim.lsp.buf.rename, desc = "Code Rename" },
-  { keys = "<leader>k", func = vim.lsp.buf.hover, desc = "Hover Documentation", has = "hoverProvider" },
-  { keys = "K", func = vim.lsp.buf.hover, desc = "Hover (alt)", has = "hoverProvider" },
-  { keys = "gd", func = vim.lsp.buf.definition, desc = "Goto Definition", has = "definitionProvider" },
+  { keys = "<leader>cr", func = vim.lsp.buf.rename,      desc = "Code Rename" },
+  { keys = "<leader>k",  func = vim.lsp.buf.hover,       desc = "Hover Documentation", has = "hoverProvider" },
+  { keys = "K",          func = vim.lsp.buf.hover,       desc = "Hover (alt)",         has = "hoverProvider" },
+  { keys = "gd",         func = vim.lsp.buf.definition,  desc = "Goto Definition",     has = "definitionProvider" },
 }
 
 -- I use blink.cmp for completion, but you can use native completion too
@@ -49,6 +49,5 @@ local ts_server = vim.g.lsp_typescript_server or "vtsls"
 vim.lsp.enable({
   ts_server,
   'lua_ls',
+  'gopls',
 })
-
-
