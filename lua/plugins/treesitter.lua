@@ -38,6 +38,7 @@ require("nvim-treesitter").install({
   "markdown_inline",
   "nginx",
   "nix",
+  "prisma",
   "proto",
   "python",
   "query",
@@ -62,7 +63,7 @@ require("nvim-treesitter-textobjects").setup({
     lookahead = true,
     selection_modes = {
       ["@parameter.outer"] = "v", -- charwise
-      ["@function.outer"] = "V", -- linewise
+      ["@function.outer"] = "V",  -- linewise
       ["@class.outer"] = "<c-v>", -- blockwise
     },
     include_surrounding_whitespace = false,

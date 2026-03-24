@@ -50,4 +50,5 @@ vim.lsp.enable({
   ts_server,
   'lua_ls',
   'gopls',
+  'prismals',
 })
