@@ -47,14 +47,14 @@ hi("StatusModeToNorm", { guibg = NONE, guifg = palette.green })
 
 -- git
 hi("StatusGit", { guibg = palette.dark_sienna, guifg = palette.light_gray, gui = "bold" })
-hi("StatusGitToNorm", { guibg = NONE, guifg = palette.pink })
-hi("StatusDiffAdd", { guibg = NONE, guifg = palette.light_green, gui = "bold" })
-hi("StatusDiffChange", { guibg = NONE, guifg = palette.yellow, gui = "bold" })
-hi("StatusDiffDelete", { guibg = NONE, guifg = palette.red, gui = "bold" })
+hi("StatusGitToNorm", { guibg = palette.dark_sienna, guifg = palette.pink })
+hi("StatusDiffAdd", { guibg = palette.dark_sienna, guifg = palette.light_green, gui = "bold" })
+hi("StatusDiffChange", { guibg = palette.dark_sienna, guifg = palette.yellow, gui = "bold" })
+hi("StatusDiffDelete", { guibg = palette.dark_sienna, guifg = palette.red, gui = "bold" })
 
 --file
-hi("StatusFile", { guibg = NONE, guifg = NONE, gui = "bold" })
-hi("StatusFileToNorm", { guibg = NONE, guifg = NONE })
+hi("StatusFile", { guibg = palette.soft_violet, guifg = palette.light_gray, gui = "bold" })
+hi("StatusFileToNorm", { guibg = NONE, guifg = palette.soft_violet })
 
 hi("StatusLSP", { guibg = NONE, guifg = NONE, gui = "bold" })
 hi("StatusLSPToNorm", { guibg = NONE, guifg = NONE })

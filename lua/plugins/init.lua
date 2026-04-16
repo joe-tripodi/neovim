@@ -1,7 +1,7 @@
 require("plugins.whichkey")
 require("plugins.snacks")
 require("plugins.theme")
-require("plugins.treesitter")
+-- require("plugins.treesitter")
 require("plugins.blink")
 require("plugins.conform")
 require("plugins.git")
