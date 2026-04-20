@@ -4,6 +4,10 @@
       "rev": "ecea24a9a067c6f176b8e13eb11251c739caf055",
       "src": "https://github.com/CopilotC-Nvim/CopilotChat.nvim"
     },
+    "alabaster.nvim": {
+      "rev": "b902c73fabefc13583bfc0c18b28950ea8f6244f",
+      "src": "http://github.com/dchinmay2/alabaster.nvim"
+    },
     "blink.cmp": {
       "rev": "451168851e8e2466bc97ee3e026c3dcb9141ce07",
       "src": "https://github.com/saghen/blink.cmp",

@@ -18,4 +18,9 @@ vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 -- Update all plugins to the latest
 vim.keymap.set("n", "<leader>pu", "<cmd>lua vim.pack.update()<CR>")
 
-
+vim.keymap.set("n", "<leader>tt", function()
+  vim.o.background = (vim.o.background == "light") and "dark" or "light"
+end, {
+  desc = "Toggle Alabaster light/dark",
+  silent = true,
+})
