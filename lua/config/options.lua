@@ -77,9 +77,9 @@ vim.g.trouble_lualine = true
 
 opt.jumpoptions = "view"
 opt.laststatus = 3    -- global statusline
-opt.list = false
 opt.linebreak = true  -- Wrap lines at convenient points
-opt.list = true       -- Show some invisible characters (tabs...
+opt.list = true       -- Show some invisible characters
+opt.listchars = { tab = "  ", trail = "·", nbsp = "␣" } -- Hide tab markers
 opt.shiftround = true -- Round indent
 opt.shiftwidth = 2    -- Size of an indent
 opt.shortmess:append({ W = true, I = true, c = true, C = true })
