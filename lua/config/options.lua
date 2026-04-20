@@ -3,8 +3,9 @@ opt.number = true         -- Line numbers
 opt.relativenumber = true -- Relative line numbers
 opt.cursorline = true     -- Highlight current line
 opt.wrap = true           -- Don't wrap lines
--- opt.scrolloff = 10        -- Keep 10 lines above/below cursor
--- opt.sidescrolloff = 8     -- Keep 8 columns left/right of cursor
+opt.linebreak = true
+opt.scrolloff = 10        -- Keep 10 lines above/below cursor
+opt.sidescrolloff = 8     -- Keep 8 columns left/right of cursor
 
 -- Indentation
 opt.tabstop = 2        -- Tab width
