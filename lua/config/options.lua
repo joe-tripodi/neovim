@@ -2,9 +2,9 @@ local opt = vim.opt
 opt.number = true         -- Line numbers
 opt.relativenumber = true -- Relative line numbers
 opt.cursorline = true     -- Highlight current line
-opt.wrap = false          -- Don't wrap lines
-opt.scrolloff = 10        -- Keep 10 lines above/below cursor
-opt.sidescrolloff = 8     -- Keep 8 columns left/right of cursor
+opt.wrap = true           -- Don't wrap lines
+-- opt.scrolloff = 10        -- Keep 10 lines above/below cursor
+-- opt.sidescrolloff = 8     -- Keep 8 columns left/right of cursor
 
 -- Indentation
 opt.tabstop = 2        -- Tab width
@@ -76,12 +76,12 @@ vim.g.autoformat = true
 vim.g.trouble_lualine = true
 
 opt.jumpoptions = "view"
-opt.laststatus = 3    -- global statusline
-opt.linebreak = true  -- Wrap lines at convenient points
-opt.list = true       -- Show some invisible characters
+opt.laststatus = 3 -- global statusline
+opt.linebreak = true -- Wrap lines at convenient points
+opt.list = true -- Show some invisible characters
 opt.listchars = { tab = "  ", trail = "·", nbsp = "␣" } -- Hide tab markers
 opt.shiftround = true -- Round indent
-opt.shiftwidth = 2    -- Size of an indent
+opt.shiftwidth = 2 -- Size of an indent
 opt.shortmess:append({ W = true, I = true, c = true, C = true })
 
 vim.g.markdown_recommended_style = 0
