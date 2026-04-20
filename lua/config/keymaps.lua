@@ -21,6 +21,11 @@ vim.keymap.set("n", "<leader>pu", "<cmd>lua vim.pack.update()<CR>")
 vim.keymap.set("n", "<leader>tt", function()
   vim.o.background = (vim.o.background == "light") and "dark" or "light"
   vim.api.nvim_set_hl(0, "@keyword", { fg = "#c678dd", bold = false })
+  vim.api.nvim_set_hl(0, "@comment", {
+    fg = "#22CC22",
+    italic = true,
+    bold = true,
+  })
 end, {
   desc = "Toggle Alabaster light/dark",
   silent = true,
