@@ -4,9 +4,9 @@
 local M = {}
 
 local variants = {
-  main = { -- exact original naysayer dark
+  main = {            -- exact original naysayer dark
     _nc = "#16141f",
-    base = "#031c1f",
+    base = "#062524", -- "#031c1f",
     surface = "#031c1f",
     overlay = "#26233a",
     muted = "#6e6a86",
@@ -22,6 +22,10 @@ local variants = {
     highlight_low = "#21202e",
     highlight_med = "#403d52",
     highlight_high = "#524f67",
+    gitModified = '#FF9500', --#F66177',
+    gitUntracked = '#3eb489',
+    hidden = '#566E99',
+    whichKeyFloat = '#3e3e4f',
     none = "NONE",
   },
 
@@ -43,6 +47,10 @@ local variants = {
     highlight_low = "#e8e0d5",
     highlight_med = "#d9d1c4",
     highlight_high = "#c9c1b5",
+    gitModified = '#FF9500', --#F66177',
+    gitUntracked = '#3eb489',
+    hidden = '#566E99',
+    whichKeyFloat = '#3e3e4f',
     none = "NONE",
   },
 }
@@ -91,7 +99,15 @@ function M.load()
   hl("Type", { fg = p.foam })
   hl("Special", { fg = p.iris })
 
+  -- Graphql specific
+  hl("graphqlType", { fg = p.gold })
+  hl("graphqlStructure", { fg = p.iris })
+  hl("graphqlName", { fg = p.foam })
+
+
   -- UI elements
+  hl("WhichKeyNormal", { bg = p.whichKeyFloat })
+  hl("WhichKeyBorder", { bg = p.whichKeyFloat })
   hl("Visual", { bg = p.highlight_med })
   hl("Search", { fg = p.base, bg = p.gold })
   hl("IncSearch", { fg = p.base, bg = p.gold })
@@ -99,6 +115,7 @@ function M.load()
   hl("PmenuSel", { fg = p.base, bg = p.rose })
   hl("StatusLine", { fg = p.text, bg = p.surface })
   hl("StatusLineNC", { fg = p.muted, bg = p.surface })
+  hl("SnacksPickerPathHidden", { fg = p.hidden })
 
   -- Diagnostics & Git
   hl("DiagnosticError", { fg = "#eb6f92" })
@@ -108,6 +125,8 @@ function M.load()
   hl("DiffAdd", { fg = p.foam, bg = "#2a3a2f" })
   hl("DiffDelete", { fg = "#eb6f92", bg = "#3a2a2f" })
   hl("DiffChange", { fg = p.gold, bg = "#3a3228" })
+  hl("SnacksPickerGitStatusModified", { fg = p.gitModified })
+  hl("SnacksPickerGitStatusUntracked", { fg = p.gitUntracked })
 
   -- Tree-sitter (modern syntax)
   hl("@keyword", { fg = p.iris })
